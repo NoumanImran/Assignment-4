@@ -212,61 +212,127 @@ else{
 OUTPUT:
 Enter Any year
 2004
-*/
 2004 is leap year
+/*   
+
+
+
+//Question # 9
    
-   ______________________
-   
-// print('Enter Five Integers'); 
-// int? a, b, c, d, e = int.parse(stdin.readLineSync()!);
+double bonus;
+stdout.write("Enter your salary:");
+String? salaryInStr = stdin.readLineSync();
+stdout.write("Enter your Grade:");
+String? gradeInStr = stdin.readLineSync();
 
-// dynamic max1; 
-// dynamic min = max1 = a;
+double salary = double.parse(salaryInStr!);
+int grade = int.parse(gradeInStr!);
 
-// if(b<min)
-// min = b;
-
-// if(c < min)
-// min = c;
-
-// if(d < min)
-// min = d;
-
-// if(e < min)
-// min = e;
-
-// if(b < max1)
-// max1 = b;
-
-// if(c < max1)
-// max1 = c;
-
-// if(d < max1)
-// max1 = d;
-
-// if(e < max1)
-// max1 = e;
-
-// print('Largest Number is $max1');
-// print('Largest Number is $min');
-
-   
-   _________________________
-   
-   
-   
-var bonus;
-print('Enter your Salary'); 
-int? salary = int.parse(stdin.readLineSync()!);
-
-print('Enter your Grade'); 
-int? grade = int.parse(stdin.readLineSync()!);
-
-if(grade>15)
-bonus = salary * 50.0/100.0;
-
-else{
-bonus = salary * 25.0/100.0;
-salary= salary + bonus;
+if (grade > 15) 
+{
+   bonus = salary * 50.0 / 100.0;
+} 
+  
+else 
+{
+  bonus = salary * 25.0 / 100.0;
 }
-print('Your Salary is Rs:$salary');
+salary = salary + bonus;
+print("Your salary is RS: $salary");
+
+/*
+OUTPUT : Enter your salary:16000
+Enter your Grade: 17
+YOur salary is RS: 24000
+*/
+
+
+
+//Question # 10
+   
+print("Enter The five numbers:");
+
+String? firstNumber = stdin.readLineSync();
+String? secondNumber = stdin.readLineSync();
+String? thirdNumber = stdin.readLineSync();
+String? forthNumber = stdin.readLineSync();
+String? fifthNumber = stdin.readLineSync();
+
+
+int firstNum = int.parse(firstNumber!);
+int secondNum = int.parse(secondNumber!);
+int thirdNum = int.parse(thirdNumber!);
+int forthNum = int.parse(forthNumber!);
+int fifthNum = int.parse(fifthNumber!);
+  
+final max;
+final min = max = firstNumber
+
+if (secondNum < minimum)
+minimum = secondNum;
+
+if (thirdNum < minimum) 
+minimum = thirdNum;
+
+if (forthNum < minimum) 
+minimum = forthNum;
+
+if (fifthNum < minimum) 
+minimum = fifthNum;
+
+if (secondNum > maximum) 
+maximum = secondNum;
+
+if (thirdNum > maximum)
+maximum = thirdNum;
+  
+if (forthNum > maximum)
+maximum = forthNum;
+  
+if (fifthNum > maximum) 
+maximum = fifthNum;
+
+print('Largest Number is $max1');
+print('Largest Number is $min');
+
+
+/*
+OUTPUT : Enter The five numbers:
+Enter your number: 95
+Enter your number: 26
+Enter your number: 78
+Enter your number: 23
+Enter your number: 2
+
+The largest number is 95
+The smallest number is 2
+*/
+
+
+
+//Question # 11
+
+print("Enter First number:");
+String? firstNumbers = stdin.readLineSync();
+print("Enter Second number:");
+String? secondNumbers = stdin.readLineSync();
+
+int number1 = int.parse(firstNumbers!);
+int number2 = int.parse(secondNumbers!);
+
+if (number1 % number2 == 0) 
+{
+print("Your number is  multiple of $firstNumbers");
+} 
+else 
+{
+print("Your number is not multiple of $firstNumbers");
+}
+
+
+/*
+OUTPUT :
+Enter First number: 96
+Enter Second number: 2
+Your number is multiple of 2
+*/
