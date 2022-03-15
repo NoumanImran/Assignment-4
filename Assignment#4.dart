@@ -176,8 +176,97 @@ The Number is Negative
    
 //Question # 7
    
+print('Enter Any Number'); 
+int? evenodd = int.parse(stdin.readLineSync()!);
+
+if(evenodd%2 == 0)
+print('$evenodd is even');
+
+else{
+  print('$evenodd is odd');
+}
+   
    
 /*
 OUTPUT:
-
+Enter Any Number
+65
+65 is odd
 */
+
+   
+   
+//Question # 8
+  
+print('Enter Any year'); 
+int? year = int.parse(stdin.readLineSync()!);
+
+if(year%4 == 0)
+print('$year is leap year');
+
+else{
+  print('$year is not a leap year');
+}
+   
+/*
+OUTPUT:
+Enter Any year
+2004
+*/
+2004 is leap year
+   
+   ______________________
+   
+// print('Enter Five Integers'); 
+// int? a, b, c, d, e = int.parse(stdin.readLineSync()!);
+
+// dynamic max1; 
+// dynamic min = max1 = a;
+
+// if(b<min)
+// min = b;
+
+// if(c < min)
+// min = c;
+
+// if(d < min)
+// min = d;
+
+// if(e < min)
+// min = e;
+
+// if(b < max1)
+// max1 = b;
+
+// if(c < max1)
+// max1 = c;
+
+// if(d < max1)
+// max1 = d;
+
+// if(e < max1)
+// max1 = e;
+
+// print('Largest Number is $max1');
+// print('Largest Number is $min');
+
+   
+   _________________________
+   
+   
+   
+var bonus;
+print('Enter your Salary'); 
+int? salary = int.parse(stdin.readLineSync()!);
+
+print('Enter your Grade'); 
+int? grade = int.parse(stdin.readLineSync()!);
+
+if(grade>15)
+bonus = salary * 50.0/100.0;
+
+else{
+bonus = salary * 25.0/100.0;
+salary= salary + bonus;
+}
+print('Your Salary is Rs:$salary');
