@@ -149,3 +149,35 @@ Enter Your Third Number
 38
 The Max Number is 95
 */
+
+   
+//Question # 6
+   
+print('Enter a Number'); 
+int? posneg = int.parse(stdin.readLineSync()!);
+
+
+if(posneg<0)
+print('The Number is Postive');
+
+if(posneg>0)
+print('The Number is Postive');
+
+if(posneg==0)
+print('The Number is 0'); 
+   
+/*
+OUTPUT:
+Enter a Number
+-5
+The Number is Negative
+*/
+   
+   
+//Question # 7
+   
+   
+/*
+OUTPUT:
+
+*/
